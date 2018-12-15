@@ -89,7 +89,7 @@ public class Start {
 		init();
 	}
 
-	/*
+	/**
 	 * 判断所有线程是否都执行完毕了
 	 */
 	private static boolean isAllThreadEnd() {
