@@ -1,0 +1,23 @@
+用java写的银行系统：
+	开户、改密码、存取、销户；
+	
+可以开三种户：
+	Saver account（存入一段时间内不能取）
+	Junior account（年龄小于16岁）
+	Current account
+
+开户要求:提供四个信息（开户时要确认客户的credit status，默认都为良好，写个提示就行）
+	Name，address，date of birth，type of account
+	开户之后给出unique 账号，开户时设置6位pin密码
+
+存款Deposit Funds：分为cleared（cash）（立即进入账户）和un-cleared（transfer）（暂不进入账户）
+	Clear funds：从Bank clearing system进入，一旦完成，un-cleared funds进入账户
+
+取款Deposit Funds：输账户，pin.
+	Junior and Saver accounts取款不能超过存款
+	Current account 取款能有一个overdraft limit
+	Saver accounts 每次取的时候给出一个notice
+
+Suspend Account：（悬帐？）类似于冻结账户，不能操作，解除（re- instated）后能正常操作
+
+Close Account：关闭删除账户
